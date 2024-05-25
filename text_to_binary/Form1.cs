@@ -1,3 +1,5 @@
+using System.Collections;
+using System.ComponentModel;
 using System.Xml.Schema;
 
 namespace text_to_binary
@@ -13,6 +15,9 @@ namespace text_to_binary
             from.Items.Add("Binary");
             to.Items.Add("Capital Text");
             to.Items.Add("Binary");
+
+            from.Text = "Capital Text";
+            to.Text = "Binary";
 
             //map
             map.Add('A', "01000001");
@@ -59,47 +64,69 @@ namespace text_to_binary
             if (fValue == "" || tValue == "")
             {
                 MessageBox.Show("Please select type of conversion.");
+                input.Clear();
             }
             else if (input.Text.Length == 0)
             {
-                output.Text = "";
+                carry = "";
             }
             else if (fValue == "Capital Text" && tValue == "Binary")
             {
-                foreach (char key in map.Keys)
+                for (int i = 0; i < input.Text.Length; i++)
                 {
-                    for (int i = 0; i < input.Text.Length; i++)
-                    {
-                        if (key == input.Text[i])
-                        {
-                            output.Text = map[key];
-                        }
-                    }
-
+                    carry += findValueOrKey(input.Text[i].ToString(), "textBin").ToString();
+                    carry += " ";
                 }
             }
             else if (fValue == "Binary" && tValue == "Capital Text")
             {
-                foreach (string value in map.Values)
+                ArrayList arr = new ArrayList();
+
+                for (int i = 0; i < input.Text.Length; i+=8)
                 {
-                    if (value == input.Text)
+                    string bin = "";
+                    int j = i, counter = 0;
+                    while (j < input.Text.Length && counter < 8)
                     {
-                        output.Text = GetKeyFromValue(value).ToString();
+                        
+                        bin += input.Text[j].ToString();
+                        j++;
+                        counter++;
+                    }
+                    arr.Add(bin);
+                }
+                foreach (string b in arr)
+                {
+                    carry += findValueOrKey(b, "binText").ToString();
+                    carry += " ";
+                }
+            }
+            output.Text = carry;
+
+        }
+        private string findValueOrKey(string search, string type)
+        {
+            if (type == "textBin")
+            {
+                foreach (KeyValuePair<char, string> pair in map)
+                {
+                    if (pair.Key == Convert.ToChar(search))
+                    {
+                        return pair.Value;
+                    }
+                }
+            }else if (type == "binText")
+            {
+                foreach (KeyValuePair<char, string> pair in map)
+                {
+                    if (pair.Value == search)
+                    {
+                        return pair.Key.ToString();
                     }
                 }
             }
-
-        }
-        private char GetKeyFromValue(string valueVar)
-        {
-            foreach (char keyVar in map.Keys)
-            {
-                if (map[keyVar] == valueVar)
-                {
-                    return keyVar;
-                }
-            }
-            return ' ';
+            
+            return "";
         }
 
         private void copy_Click(object sender, EventArgs e)

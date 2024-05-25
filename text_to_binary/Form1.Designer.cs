@@ -28,27 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             input = new Guna.UI2.WinForms.Guna2TextBox();
             label2 = new Label();
             from = new Guna.UI2.WinForms.Guna2ComboBox();
             to = new Guna.UI2.WinForms.Guna2ComboBox();
             label3 = new Label();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             copy = new Guna.UI2.WinForms.Guna2Button();
-            output = new Label();
-            guna2Panel1.SuspendLayout();
+            output = new Guna.UI2.WinForms.Guna2TextBox();
             SuspendLayout();
             // 
             // label1
@@ -67,7 +65,7 @@
             input.Animated = true;
             input.BorderColor = Color.FromArgb(66, 71, 105);
             input.BorderRadius = 6;
-            input.CustomizableEdges = customizableEdges11;
+            input.CustomizableEdges = customizableEdges1;
             input.DefaultText = "";
             input.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             input.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -84,7 +82,7 @@
             input.PlaceholderForeColor = Color.Gray;
             input.PlaceholderText = "Input text...";
             input.SelectedText = "";
-            input.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            input.ShadowDecoration.CustomizableEdges = customizableEdges2;
             input.Size = new Size(510, 53);
             input.TabIndex = 1;
             input.TextOffset = new Point(3, 0);
@@ -105,7 +103,7 @@
             from.BackColor = Color.Transparent;
             from.BorderColor = Color.FromArgb(66, 71, 105);
             from.BorderRadius = 6;
-            from.CustomizableEdges = customizableEdges13;
+            from.CustomizableEdges = customizableEdges3;
             from.DrawMode = DrawMode.OwnerDrawFixed;
             from.DropDownStyle = ComboBoxStyle.DropDownList;
             from.FillColor = Color.FromArgb(248, 244, 236);
@@ -119,7 +117,7 @@
             from.Name = "from";
             from.ShadowDecoration.BorderRadius = 8;
             from.ShadowDecoration.Color = Color.FromArgb(66, 71, 105);
-            from.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            from.ShadowDecoration.CustomizableEdges = customizableEdges4;
             from.ShadowDecoration.Depth = 20;
             from.Size = new Size(238, 46);
             from.TabIndex = 3;
@@ -129,7 +127,7 @@
             to.BackColor = Color.Transparent;
             to.BorderColor = Color.FromArgb(66, 71, 105);
             to.BorderRadius = 6;
-            to.CustomizableEdges = customizableEdges15;
+            to.CustomizableEdges = customizableEdges5;
             to.DrawMode = DrawMode.OwnerDrawFixed;
             to.DropDownStyle = ComboBoxStyle.DropDownList;
             to.FillColor = Color.FromArgb(248, 244, 236);
@@ -143,7 +141,7 @@
             to.Name = "to";
             to.ShadowDecoration.BorderRadius = 8;
             to.ShadowDecoration.Color = Color.FromArgb(66, 71, 105);
-            to.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            to.ShadowDecoration.CustomizableEdges = customizableEdges6;
             to.ShadowDecoration.Depth = 20;
             to.Size = new Size(238, 46);
             to.TabIndex = 5;
@@ -158,23 +156,9 @@
             label3.TabIndex = 4;
             label3.Text = "To";
             // 
-            // guna2Panel1
-            // 
-            guna2Panel1.BorderColor = Color.FromArgb(66, 71, 105);
-            guna2Panel1.BorderRadius = 6;
-            guna2Panel1.BorderThickness = 1;
-            guna2Panel1.Controls.Add(copy);
-            guna2Panel1.Controls.Add(output);
-            guna2Panel1.CustomizableEdges = customizableEdges19;
-            guna2Panel1.Location = new Point(41, 280);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            guna2Panel1.Size = new Size(510, 100);
-            guna2Panel1.TabIndex = 6;
-            // 
             // copy
             // 
-            copy.CustomizableEdges = customizableEdges17;
+            copy.CustomizableEdges = customizableEdges7;
             copy.DisabledState.FillColor = Color.FromArgb(248, 244, 236);
             copy.DisabledState.ForeColor = Color.FromArgb(248, 244, 236);
             copy.DisabledState.Image = (Image)resources.GetObject("resource.Image");
@@ -182,40 +166,60 @@
             copy.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             copy.ForeColor = Color.White;
             copy.Image = (Image)resources.GetObject("copy.Image");
-            copy.Location = new Point(468, 3);
+            copy.Location = new Point(510, 352);
             copy.Name = "copy";
-            copy.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            copy.ShadowDecoration.CustomizableEdges = customizableEdges8;
             copy.Size = new Size(39, 35);
             copy.TabIndex = 7;
             copy.Click += copy_Click;
             // 
             // output
             // 
-            output.Font = new Font("Microsoft New Tai Lue", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            output.Animated = true;
+            output.BorderColor = Color.FromArgb(66, 71, 105);
+            output.BorderRadius = 6;
+            output.CustomizableEdges = customizableEdges9;
+            output.DefaultText = "";
+            output.DisabledState.BorderColor = Color.FromArgb(66, 71, 105);
+            output.DisabledState.FillColor = Color.FromArgb(248, 244, 236);
+            output.DisabledState.ForeColor = Color.FromArgb(66, 71, 105);
+            output.DisabledState.PlaceholderForeColor = Color.Gray;
+            output.Enabled = false;
+            output.FillColor = Color.FromArgb(248, 244, 236);
+            output.FocusedState.BorderColor = Color.FromArgb(66, 71, 105);
+            output.Font = new Font("Microsoft New Tai Lue", 9F, FontStyle.Regular, GraphicsUnit.Point);
             output.ForeColor = Color.FromArgb(66, 71, 105);
-            output.Location = new Point(3, 9);
+            output.HoverState.BorderColor = Color.FromArgb(66, 71, 105);
+            output.Location = new Point(41, 280);
+            output.Multiline = true;
             output.Name = "output";
-            output.Size = new Size(504, 77);
-            output.TabIndex = 7;
+            output.PasswordChar = '\0';
+            output.PlaceholderForeColor = Color.Gray;
+            output.PlaceholderText = "Output";
+            output.SelectedText = "";
+            output.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            output.Size = new Size(510, 109);
+            output.TabIndex = 8;
+            output.TextOffset = new Point(3, 0);
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(248, 244, 236);
-            ClientSize = new Size(594, 413);
-            Controls.Add(guna2Panel1);
+            ClientSize = new Size(594, 431);
+            Controls.Add(copy);
             Controls.Add(to);
             Controls.Add(label3);
             Controls.Add(from);
             Controls.Add(label2);
             Controls.Add(input);
             Controls.Add(label1);
+            Controls.Add(output);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Text to Binary Converter";
-            guna2Panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -228,8 +232,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox from;
         private Guna.UI2.WinForms.Guna2ComboBox to;
         private Label label3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Label output;
         private Guna.UI2.WinForms.Guna2Button copy;
+        private Guna.UI2.WinForms.Guna2TextBox output;
     }
 }

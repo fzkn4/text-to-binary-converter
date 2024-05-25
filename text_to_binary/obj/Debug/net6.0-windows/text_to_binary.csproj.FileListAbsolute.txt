@@ -20,3 +20,4 @@ C:\Users\Fzkn4\Music\Fzkn4\C isnt sharp\text_to_binary\text_to_binary\obj\Debug\
 C:\Users\Fzkn4\Music\Fzkn4\C isnt sharp\text_to_binary\text_to_binary\obj\Debug\net6.0-windows\text_to_binary.genruntimeconfig.cache
 C:\Users\Fzkn4\Music\Fzkn4\C isnt sharp\text_to_binary\text_to_binary\obj\Debug\net6.0-windows\ref\text_to_binary.dll
 C:\Users\Fzkn4\Music\Fzkn4\C isnt sharp\text_to_binary\text_to_binary\obj\Debug\net6.0-windows\text_to_binary.Properties.Resources.resources
+C:\Users\Fzkn4\Music\Fzkn4\C isnt sharp\text_to_binary\text_to_binary\obj\Debug\net6.0-windows\text_to_binary.sourcelink.json
