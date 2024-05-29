@@ -82,7 +82,7 @@ namespace text_to_binary
             {
                 ArrayList arr = new ArrayList();
 
-                for (int i = 0; i < input.Text.Length; i+=8)
+                for (int i = 0; i < input.Text.Length; i+=9)
                 {
                     string bin = "";
                     int j = i, counter = 0;
@@ -131,7 +131,7 @@ namespace text_to_binary
 
         private void copy_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(output.Text);
+            Clipboard.SetText(output.Text.Trim(' '));
             copy.Enabled = false;
         }
     }
